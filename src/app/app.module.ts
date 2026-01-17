@@ -12,6 +12,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { GetConfirmComponent } from './shared/components/get-confirm/get-confirm.component';
+import { MovieDashboardComponent } from './shared/components/movie-dashboard/movie-dashboard.component';
+import { MovieFormComponent } from './shared/components/movie-form/movie-form.component';
+import { MovieListComponent } from './shared/components/movie-list/movie-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { GetConfirmComponent } from './shared/components/get-confirm/get-confirm
     TodoDashboardComponent,
     TodoFormComponent,
     TodoListComponent,
-    GetConfirmComponent
+    GetConfirmComponent,
+    MovieDashboardComponent,
+    MovieFormComponent,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,

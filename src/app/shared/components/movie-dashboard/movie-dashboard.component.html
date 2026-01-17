@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <app-movie-form
+            (emitAddMovie)="getAddMovie($event)"
+            (emitUpdateMovie)="getUpdateMovie($event)"
+            [getEdit]="editMovie"
+            ></app-movie-form>
+        </div>
+        <div class="col-md-6">
+            <app-movie-list
+            [movies]="moviesArr"
+        
+            (emitEditMovie)="getEditMovie($event)"
+            ></app-movie-list>
+        </div>
+    </div>
+</div>

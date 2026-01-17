@@ -1,0 +1,13 @@
+<ng-container>
+    <ul class="list-group">
+        <li *ngFor="let m of movies" class="list-group-item d-flex justify-content-between align-items-center">
+            <strong>
+                {{m.mName}}
+            </strong>
+            <div>
+                <button (click)="onEdit(m)" mat-raised-button class="mr-2" color="accent">edit</button>
+                <button (click)="onRemove(m)" mat-raised-button color="accent">delete</button>
+            </div>
+        </li>
+    </ul>
+</ng-container>

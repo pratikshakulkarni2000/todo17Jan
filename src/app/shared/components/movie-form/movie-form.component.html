@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-body">
+        <form #mForm="ngForm" (ngSubmit)="onAdd()">
+            <div class="form-group">
+                <label for="mName">Movie Name</label>
+                <input 
+                ngModel
+                #mName="ngModel"
+                name="mName"
+                required
+                type="text" class="form-control">
+
+                <strong class="text-danger" *ngIf="mName.touched && mName.hasError('required')">
+                    required field!!!
+                </strong>
+            </div>
+
+            <button *ngIf="!isInEditMode" mat-raised-button color="accent">Add Movies</button>
+            <button (click)="onUpdate()" *ngIf="isInEditMode" mat-raised-button color="accent">Update Movies</button>
+        </form>
+    </div>
+</div>
